@@ -1,3 +1,8 @@
+;; sudo find-file
+;; usage: /sudo::/path/to/file
+(require 'tramp)
+(setq password-cache-expiry 6000)
+
 (require 'browse-kill-ring)
 (browse-kill-ring-default-keybindings)
 
