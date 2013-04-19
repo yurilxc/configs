@@ -1,9 +1,6 @@
 (require 'auto-complete)
 (global-auto-complete-mode 1)
 
-(require 'yasnippet)
-(yas/global-mode 1)
-
 (require 'lisp-settings)
 
 (require 'tex-settings)
