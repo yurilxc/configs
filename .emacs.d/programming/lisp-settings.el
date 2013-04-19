@@ -6,11 +6,7 @@
   (insert "()")
   (backward-char))
 
-(defun lisp-keybindings()
-  (interactive())
-  (define-key lisp-interaction-mode-map "\C-m" 'newline-and-indent)
-  (define-key lisp-interaction-mode-map "(" 'lisp-insert-parenthesis))
-
-(add-hook 'lisp-interaction-mode-hook 'lisp-keybindings)
+(define-key lisp-interaction-mode-map "\C-m" 'newline-and-indent)
+(define-key lisp-interaction-mode-map "(" 'lisp-insert-parenthesis)
 
 (provide 'lisp-settings)
