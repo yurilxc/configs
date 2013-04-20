@@ -1,8 +1,5 @@
-(require 'auto-complete)
-(global-auto-complete-mode 1)
-
-(require 'yasnippet)
-(setq yas/snippet-dirs "")
+(require 'auto-complete-config)
+(ac-config-default)
 
 (require 'lisp-settings)
 
