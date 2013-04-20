@@ -1,3 +1,7 @@
+(require 'yasnippet)
+(setq yas/root-directory (list (concat emacs-dir "snippets/")))
+(yas-global-mode)
+
 (require 'auto-complete-config)
 (ac-config-default)
 
