@@ -1,0 +1,9 @@
+[submodule ".emacs.d/pkg/yasnippet"]
+	path = .emacs.d/pkg/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+[submodule ".emacs.d/pkg/popup-el"]
+	path = .emacs.d/pkg/popup-el
+	url = https://github.com/auto-complete/popup-el.git
+[submodule ".emacs.d/pkg/auto-complete"]
+	path = .emacs.d/pkg/auto-complete
+	url = https://github.com/auto-complete/auto-complete.git
