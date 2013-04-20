@@ -61,7 +61,7 @@ that was stored with ska-point-to-register."
  backup-directory-alist
  '(("." . "~/.emacs.d/.backups"))    ; don't litter my fs tree
  delete-old-version t
- kept-new-versions 6
+ kept-new-versions 16
  kept-old-versions 2
  version-control t)       ; use versioned backups
 
