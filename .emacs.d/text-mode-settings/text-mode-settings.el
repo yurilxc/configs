@@ -1,5 +1,6 @@
 (require 'yasnippet)
 (setq yas/root-directory (list (concat emacs-dir "snippets/")))
+(setq yas/indent-line 'fixed)
 (yas-global-mode)
 
 (require 'auto-complete-config)
