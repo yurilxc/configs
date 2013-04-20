@@ -12,4 +12,4 @@
 
 (require 'tools)
 
-(require 'programming)
+(require 'text-mode-settings)

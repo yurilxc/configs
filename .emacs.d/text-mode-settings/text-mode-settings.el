@@ -1,6 +1,9 @@
 (require 'auto-complete)
 (global-auto-complete-mode 1)
 
+(require 'yasnippet)
+(setq yas/snippet-dirs "")
+
 (require 'lisp-settings)
 
 (require 'tex-settings)
@@ -11,4 +14,4 @@
 
 (require 'tc-settings)
 
-(provide 'programming)
+(provide 'text-mode-settings)
