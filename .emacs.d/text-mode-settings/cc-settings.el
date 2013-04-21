@@ -16,6 +16,10 @@
       (define-key map (kbd "<f8>") 'next-error)
       (define-key map (kbd "<S-f8>") 'previous-error))))
 
+(define-key cscope:map "\C-css" 'cscope-find-this-symbol)
+
+(require 'xcscope)
+
 ;; semantic
 (setq semantic-default-submodes 
       '(global-semantic-idle-scheduler-mode
