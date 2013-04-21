@@ -17,7 +17,7 @@
 ;; (global-set-key (kbd "<C-S-up>") 'enlarge-window)
 ;; (global-set-key (kbd "<C-S-down>") 'shrink-window)
 ;; terminal-version
-(global-set-key (kbd "M-[ 2") 'other-window)
+(global-set-key (kbd "M-[ 2") 'next-multiframe-window)
 (global-set-key (kbd "<backtab>") 'previous-multiframe-window)
 (global-set-key (kbd "M-[ 9") 'enlarge-window-horizontally)
 (global-set-key (kbd "M-[ 10") 'shrink-window-horizontally)
