@@ -1,0 +1,49 @@
+URxvt.inputMethod:		ibus
+URxvt.preeditType:		OnTheSpot, None
+
+URxvt.depth:            32
+URxvt.background:       rgba:0000/0000/0000/bbbb
+! URxvt.background:       rgba:0000/0000/0000/ffff
+URxvt.transparent:      false
+!URxvt.shading:          25 # 0 to 99 darkens, 101 to 200 lightens
+URxvt.foreground:       15
+!URxvt.background:       0
+! URxvt.UL:               Blue
+! URxvt.underlineColor:   Blue
+URxvt.cursorBlink:      True
+
+URxvt.iconFile:         /usr/share/icons/gnome/22x22/apps/terminal.png
+URxvt.scrollBar:        off
+URxvt.font:             xft:DejaVu Sans Mono:pixelsize=16:foundry=unknown:weight=normal:width=normal:spacing=100:scalable=true
+
+! URxvt.perl-ext-common:  default,url-select,tabbed,clipboard
+! URxvt.perl-ext-common:		default,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common:		default,clipboard,keyboard-select
+! URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+! URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+! URxvt.keysym.M-s:           perl:keyboard-select:search
+! URxvt.keysym.C-M-y:			perl:clipboard:copy
+URxvt.clipboard.autocopy:	true
+URxvt.clipboard.pastecmd: 	xsel -ob
+URxvt.keysym.C-S-V:			perl:clipboard:paste
+URxvt.keysym.C-S-C:			perl:clipboard:copy
+URxvt.searchable-scrollback:false
+
+! URxvt.saveLines         256
+! URxvt.perl-ext-common:  default,tabbed
+
+URxvt.iso14755:			false
+
+URxvt.keysym.Control-Tab: \033[2
+URxvt.keysym.C-minus: \033[3
+URxvt.keysym.C-underscore: \033[4
+URxvt.keysym.C-equal: \033[5
+URxvt.keysym.C-plus: \033[6
+URxvt.keysym.C-period: \033[7
+URxvt.keysym.C-comma: \033[8
+URxvt.keysym.C-S-L: \033[9
+URxvt.keysym.C-S-H: \033[10
+URxvt.keysym.C-S-K: \033[11
+URxvt.keysym.C-S-J: \033[12
