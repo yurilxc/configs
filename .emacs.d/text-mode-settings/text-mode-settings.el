@@ -6,6 +6,8 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+(require 'cc-settings)
+
 (require 'lisp-settings)
 
 (require 'tex-settings)
