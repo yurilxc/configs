@@ -1,3 +1,16 @@
+;; semantic
+(semantic-mode 1)
+(setq semantic-default-submodes 
+      '(global-semantic-idle-scheduler-mode
+        global-semanticdb-minor-mode
+        global-semantic-idle-local-symbol-highlight-mode
+        global-semantic-show-parser-state-mode))
+(add-to-list 'semantic-inhibit-functions
+	     (lambda ()
+	       (cond
+		((member major-mode '(python-mode)) t)
+		(t nil))))
+
 (require 'hs-settings)
 
 (require 'yasnippet)

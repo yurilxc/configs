@@ -1,3 +1,5 @@
+(require 'xcscope)
+
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.c\\'" . c++-mode))
 
@@ -15,16 +17,5 @@
       (define-key map (kbd "<f7>") 'compile)
       (define-key map (kbd "<f8>") 'next-error)
       (define-key map (kbd "<S-f8>") 'previous-error))))
-
-(require 'xcscope)
-
-;; semantic
-(setq semantic-default-submodes 
-      '(global-semantic-idle-scheduler-mode
-        global-semanticdb-minor-mode
-        global-semantic-idle-local-symbol-highlight-mode
-        global-semantic-show-parser-state-mode
-	))
-(semantic-mode 1)
 
 (provide 'cc-settings)
