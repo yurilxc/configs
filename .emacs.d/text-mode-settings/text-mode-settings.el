@@ -1,3 +1,6 @@
+;; etags
+(global-set-key (kbd "M-,") 'pop-tag-mark)
+
 ;; semantic
 (semantic-mode 1)
 (setq semantic-default-submodes 
