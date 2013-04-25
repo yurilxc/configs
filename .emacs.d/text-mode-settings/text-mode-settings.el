@@ -16,7 +16,11 @@
 (require 'yasnippet)
 (setq yas/root-directory (list (concat emacs-dir "snippets/")))
 (setq yas/indent-line 'fixed)
-(yas-global-mode)
+(yas-global-mode 1)
+(define-key yas-keymap (kbd "TAB") nil)
+(define-key yas-keymap (kbd "<backtab>") nil)
+(define-key yas-keymap (kbd "C-n") 'yas-next-field)
+(define-key yas-keymap (kbd "C-p") 'yas-prev-field)
 
 (require 'auto-complete-config)
 (ac-config-default)
