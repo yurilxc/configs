@@ -3,6 +3,8 @@
 (global-set-key (kbd "C-c C-d") 'c-hungry-delete-forward)
 (global-set-key (kbd "C-c DEL") 'c-hungry-delete-backwards)
 
+;; disable C-c C-c shortcut, avoid accidentally commit a large region and bring emacs to dead
+(global-set-key (kbd "C-c C-c") nil)
 (global-set-key [(meta ?/)] 'hippie-expand)
 (global-set-key "\C-m" 'newline-and-indent)
 (global-set-key (kbd "M-g") 'goto-line)
