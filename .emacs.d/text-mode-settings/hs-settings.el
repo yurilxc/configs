@@ -7,7 +7,8 @@
 ;; (global-set-key (kbd "C-_") 'hs-hide-all)))
 ;; (define-globalized-minor-mode global-hs-minor-mode hs-minor-mode hs-minor-mode)
 ;; (global-hs-minor-mode 1)
-(dolist (hook (list 'c++-mode-hook
+(dolist (hook (list 'c-mode-hook
+		    'c++-mode-hook
 		    'lisp-interaction-mode-hook
 		    'emacs-lisp-mode-hook
 		    'java-mode-hook
