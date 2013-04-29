@@ -17,6 +17,7 @@
   (add-to-list 'ac-sources 'ac-source-semantic)
   (setq ac-sources (remove 'ac-source-yasnippet ac-sources))
   (add-to-list 'ac-sources 'ac-source-yasnippet)
+  (define-key map (kbd "C-c d") 'semantic-ia-show-doc)
   (define-key map (kbd "<f7>") 'compile)
   (define-key map (kbd "<f8>") 'next-error)
   (define-key map (kbd "<S-f8>") 'previous-error))
