@@ -1,3 +1,6 @@
+;; c-comment-style
+(setq comment-style 'multi-line)
+
 ;; etags
 (global-set-key (kbd "M-,") 'pop-tag-mark)
 
