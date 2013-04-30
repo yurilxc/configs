@@ -1,4 +1,5 @@
 (require 'xcscope)
+(setq cscope-display-cscope-buffer nil)
 (require 'cc-mode)
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c-mode))
@@ -6,9 +7,10 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.cpp\\'" . c++-mode))
 
-;; (defun cscope-switch-symbol(char)
+;; (defun cscope-switch-symbol()
 ;;   "Move to next or previous symbol with cscope"
-;;   (interactive "sswitch symbol:")
+;;   (interactive ())
+;;   (setq char "n")
 ;;   (while (or (equal char "n") (equal char "p") (equal char "u"))
 ;;     (cond ((equal "n" char) (cscope-next-symbol))
 ;; 	  ((equal "p" char) (cscope-prev-symbol))
@@ -32,7 +34,8 @@
   (define-key map (kbd "C-c i") 'cscope-find-files-including-file)
   (define-key map (kbd "C-c c") 'cscope-find-functions-calling-this-function)
   (define-key map (kbd "C-c C") 'cscope-find-called-functions)
-  ;; (define-key map (kbd "C-c n") 'cscope-switch-symbol)
+  (define-key map (kbd "C-c n") 'cscope-next-symbol)
+  (define-key map (kbd "C-c p") 'cscope-prev-symbol)
   (define-key map (kbd "C-c u") 'cscope-pop-mark)
   (define-key map (kbd "<f7>") 'compile)
   (define-key map (kbd "<f8>") 'next-error)
