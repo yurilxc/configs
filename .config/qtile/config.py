@@ -82,7 +82,7 @@ keys = [
     # gets hosed (which happens if you unplug and replug your usb keyboard
     # sometimes, or on system upgrades). This way you can still log back out
     # and in gracefully.
-    Key([mod, "shift"], "q",
+    Key([mod, "control"], "q",
         lazy.shutdown()),
     Key([mod, "shift"],  "r",
         lazy.restart()),
@@ -211,7 +211,7 @@ mouse = [
 # Next, we specify group names, and use the group name list to generate an appropriate
 # set of bindings for group switching.
 groups = []
-for i in ["1", "2", "3", "4", "u", "i", "o", "p"]:
+for i in ["1", "2", "3", "4", "q", "w", "e", "u", "i", "o", "p"]:
     groups.append(Group(i))
     keys.append(
         Key([mod], i, lazy.group[i].toscreen())
