@@ -34,7 +34,6 @@ screens = [Screen(top = bar.Bar([
             power_now_file='current_now',
             update_delay = 5,
             foreground = "7070ff",), 
-        widget.Systray(),
         widget.Clock(foreground = "a0a0a0",
                     fmt = '%Y-%m-%d %a %I:%M %p'),
     ], 22)) # our bar is (xx)px high
@@ -211,7 +210,7 @@ mouse = [
 # Next, we specify group names, and use the group name list to generate an appropriate
 # set of bindings for group switching.
 groups = []
-for i in ["1", "2", "3", "4", "q", "w", "e", "u", "i", "o", "p"]:
+for i in ["q", "w", "e", "1", "2", "3", "4", "u", "i", "o", "p"]:
     groups.append(Group(i))
     keys.append(
         Key([mod], i, lazy.group[i].toscreen())
