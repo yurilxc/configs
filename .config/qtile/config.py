@@ -224,7 +224,6 @@ border = dict(border_width=1)
 layouts = [
     layout.Stack(stacks=2, **border),
     layout.MonadTall(**border), 
-    # layout.Stack(stacks=2, border_width=1),
     layout.Max(),
 ]
 
