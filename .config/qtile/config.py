@@ -210,7 +210,7 @@ mouse = [
 # Next, we specify group names, and use the group name list to generate an appropriate
 # set of bindings for group switching.
 groups = []
-for i in ["q", "w", "e", "1", "2", "3", "4", "u", "i", "o", "p"]:
+for i in ["a", "q", "w", "e", "1", "2", "3", "4", "u", "i", "o", "p"]:
     groups.append(Group(i))
     keys.append(
         Key([mod], i, lazy.group[i].toscreen())
