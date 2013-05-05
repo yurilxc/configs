@@ -25,7 +25,7 @@ screens = [Screen(top = bar.Bar([
         widget.Prompt(),
         # Current window name.
         widget.WindowName(foreground = "a0a0a0",),
-        widget.Notify(),
+        widget.Notify(default_timeout = 3),
         widget.Systray(),
         widget.Volume(foreground = "70ff70"),
         widget.Battery(
