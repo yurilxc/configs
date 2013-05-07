@@ -7,5 +7,6 @@
 			  (add-to-list 'ac-sources 'ac-source-ropemacs))))
 
 (setq ropemacs-enable-autoimport t)
+(setq ropemacs-codeassist-maxfixes 3)
 
 (provide 'python-settings)
