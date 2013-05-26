@@ -83,7 +83,7 @@ keys = [
     # and in gracefully.
     Key([mod, "control"], "q",
         lazy.shutdown()),
-    Key([mod, "shift"],  "r",
+    Key([mod, "control"],  "r",
         lazy.restart()),
     Key([mod], "c",
         lazy.window.kill()),
@@ -91,8 +91,8 @@ keys = [
         lazy.group.setlayout('max')),
     Key([mod], "s",
         lazy.group.setlayout('stack')),
-    Key([mod], "n",
-        lazy.group.setlayout('xmonad-tall')),
+    # Key([mod], "n",
+    #     lazy.group.setlayout('xmonad-tall')),
     Key([mod], "x",
         lazy.group.setlayout('xmonad-tall')),
 
@@ -172,8 +172,8 @@ keys = [
     #     lazy.nextlayout()),
 
     # interact with prompts
-    Key([mod], "r",              lazy.spawncmd()),
-    Key([mod], "g",              lazy.switchgroup()),
+    Key([mod], "n",              lazy.spawncmd()),
+    # Key([mod], "g",              lazy.switchgroup()),
 
     # start specific apps
     # Key([mod], "n",              lazy.spawn("firefox")),
@@ -210,7 +210,7 @@ mouse = [
 # Next, we specify group names, and use the group name list to generate an appropriate
 # set of bindings for group switching.
 groups = []
-for i in ["a", "q", "w", "e", "1", "2", "3", "4", "u", "i", "o", "p"]:
+for i in ["a", "q", "w", "e", "r", "1", "2", "3", "4", "u", "i", "o", "p"]:
     groups.append(Group(i))
     keys.append(
         Key([mod], i, lazy.group[i].toscreen())
