@@ -1,4 +1,4 @@
-URxvt.inputMethod:		ibus
+URxvt.inputMethod:		fcitx
 URxvt.preeditType:		OnTheSpot, None
 
 URxvt.depth:            32
