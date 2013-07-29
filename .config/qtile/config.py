@@ -252,7 +252,7 @@ def startup():
     execute_once("synergys")
     execute_once("xcompmgr")
     execute_once(rc_dir + "xmodmap.py")
-    execute_once("ibus-daemon --xim")
+    execute_once("fcitx")
     execute_once("hsetroot -fill /home/arkchar/Pictures/desktop.jpg")
     execute_once(rc_dir + "trackpoint.sh")
     execute_once("xsetroot -cursor_name left_ptr")
