@@ -24,7 +24,7 @@
   ;; blanks instead of tabs
   (setq indent-tabs-mode nil)
   (setq tab-width 4)
-  (setq c-basic-offset 4)
+  (setq c-basic-offset 2)
   (add-to-list 'ac-sources 'ac-source-semantic)
   (setq ac-sources (remove 'ac-source-yasnippet ac-sources))
   (add-to-list 'ac-sources 'ac-source-yasnippet)
