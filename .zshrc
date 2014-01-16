@@ -16,6 +16,9 @@ alias -s bz2='tar -xjvf'
 alias -s pdf='evince'
 alias ec='emacsclient -c -a ""'
 
+alias cd='pushd'
+alias pd='popd'
+
 alias ssshscreen='screen -S ssh'
 alias svpnscreen='screen -S vpn'
 alias sgoagentscreen='screen -S goagent'
